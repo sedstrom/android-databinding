@@ -35,11 +35,7 @@ class MainActivity : AppCompatActivity() {
         // DataBindingUtil.
         val binding: ActivityMainBinding = DataBindingUtil.setContentView(
                 this, R.layout.activity_main)
-
-        // The returned binding has references to all the Views with an ID.
-        binding.observableFieldsActivityButton.setOnClickListener {
-            startActivity(Intent(this, ObservableFieldActivity::class.java))
-        }
+        
         binding.viewmodelActivityButton.setOnClickListener {
             startActivity(Intent(this, ViewModelActivity::class.java))
         }
